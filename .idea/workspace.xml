@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5080200b-0fff-456d-9f4e-966b61e42d1e" name="Changes" comment="v1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mishaniy/entity/ErrorU.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mishaniy/entity/ItemsO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mishaniy/parser/Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Mishaniy/entity/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Mishaniy/MainTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mishaniy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mishaniy/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mishaniy/entity/Raw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mishaniy/entity/Raw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mishaniy/entity/ItemsO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mishaniy/entity/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mishaniy/entity/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mishaniy/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mishaniy/parser/Parser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -43,6 +44,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/mazae/projectx",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,7 +55,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Mishaniy" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MainTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ex2" />
@@ -59,8 +71,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ex2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Mishaniy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Mishaniy" />
+      <option name="MAIN_CLASS_NAME" value="Mishaniy.MainTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.invalidUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ex2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Mishaniy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Mishaniy" />
+      <option name="MAIN_CLASS_NAME" value="Mishaniy.MainTest" />
+      <option name="METHOD_NAME" value="invalidUserTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.outputTypeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ex2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Mishaniy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Mishaniy" />
+      <option name="MAIN_CLASS_NAME" value="Mishaniy.MainTest" />
+      <option name="METHOD_NAME" value="outputTypeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainTest.zeroPostsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ex2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Mishaniy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Mishaniy" />
+      <option name="MAIN_CLASS_NAME" value="Mishaniy.MainTest" />
+      <option name="METHOD_NAME" value="zeroPostsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MainTest" />
+        <item itemvalue="JUnit.MainTest.invalidUserTest" />
+        <item itemvalue="JUnit.MainTest.zeroPostsTest" />
+        <item itemvalue="JUnit.MainTest.outputTypeTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -73,7 +152,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681197191689</updated>
-      <workItem from="1681197192777" duration="11895000" />
+      <workItem from="1681197192777" duration="12516000" />
+      <workItem from="1681310067437" duration="6271000" />
     </task>
     <task id="LOCAL-00001" summary="v1">
       <created>1681199454776</created>
@@ -82,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681199454776</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v1">
+      <created>1681278356724</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681278356724</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,20 +1,18 @@
 package Mishaniy;
 
-import Mishaniy.entity.Items;
-import Mishaniy.entity.ItemsO;
+import Mishaniy.entity.Post;
 import Mishaniy.parser.Parser;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Main {
-    public static ArrayList<Items> MainM(String inputLink) throws IOException {
-        final String token = "vk1.a.D13L2RLvJnL1mXV1pKI8oYODXWu3h-s2Du5Sa0ecn35P2nnFIBo-G-MjdbIr2sLIDO4HBXK8DmJRnD9w5fc-pvyqWkDdSCeb6qgj-inOnqtkOsLm0mVVBQtwi6h2kuhERMlzcogiGyXnP5sspnl-i2c_-nHIAPaPx75-unecw4da0osBmSDBQu5IwS4KO_QOUf5F5aHkVrOGIQVD5vkd8w";
-        if (!inputLink.matches("vk.com/[A-Za-z0-9_.]+$") && !inputLink.matches("https://vk.com/[A-Za-z0-9_.]+$")) {
+    public static ArrayList<Post> MainM(String inputLink) throws IOException {
+        final String token = ""; // Вставить свой access-token VK
+        if (!inputLink.matches("^vk.com/[A-Za-z0-9_.]+$") && !inputLink.matches("^https://vk.com/[A-Za-z0-9_.]+$")) {
             System.out.println("Некорректный формат ссылки");
             return null;
         }
@@ -27,11 +25,19 @@ public class Main {
             domain = inputLink.substring(start, end);
         }
         String parseUrl = "https://api.vk.com/method/wall.get?domain=" + domain +
-                "&access_token=" + token + "&v=5.131";
-        if (Parser.Parse(parseUrl) == null){
+                "&access_token=" + token + "&count=20&v=5.131";
+        if (Parser.Parse(parseUrl) == null) {
             return null;
         }
+        int offset = 20;
         var res = new ArrayList<>(Objects.requireNonNull(Parser.Parse(parseUrl)));
+        while (res.size() == offset) {
+            parseUrl = "https://api.vk.com/method/wall.get?domain=" + domain +
+                    "&access_token=" + token + "&count=20&offset=" + offset + "&v=5.131";
+            res.addAll(Parser.Parse(parseUrl));
+            offset += 20;
+        }
+        System.out.println("Профиль: https://vk.com/" + domain + "\nПостов за последнюю неделю: " + res.size());
         return res;
     }
 }
