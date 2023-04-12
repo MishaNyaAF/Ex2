@@ -21,7 +21,9 @@ public class Parser {
             System.out.println("Профиль закрыт");
             return null;
         }
-
+        if (raw.getResponse() == null){
+            return null;
+        }
         if (raw.getResponse().getCount() == 0){
             System.out.println("Профиля не существует, либо нет постов");
             return null;
@@ -45,21 +47,4 @@ public class Parser {
         }
         return resParse;
     }
-
-    public static int TimeCheck(String url) throws IOException {
-        long now = Calendar.getInstance().getTime().getTime() / 1000;
-        long interval = 3600 * 24 * 7;
-        long timeIntervalBoundary = now - interval;
-        ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-        Raw raw = objectMapper.readValue(new URL(url), Raw.class);
-        int quantity = 0;
-        for (Items item : raw.getResponse().getItems()) {
-            if (item.getDate() > timeIntervalBoundary) {
-                quantity++;
-            }
-        }
-        return quantity;
-    }
-
 }

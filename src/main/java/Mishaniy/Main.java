@@ -25,21 +25,22 @@ public class Main {
             domain = inputLink.substring(start, end);
         }
         String parseUrl = "https://api.vk.com/method/wall.get?domain=" + domain +
-                "&access_token=" + token + "&count=20&v=5.131";
+                "&access_token=" + token + "&count=100&v=5.131";
         if (Parser.Parse(parseUrl) == null) {
             return null;
         }
-        int offset = 20;
+        int offset = 100;
         var res = new ArrayList<>(Objects.requireNonNull(Parser.Parse(parseUrl)));
         while (res.size() == offset) {
             parseUrl = "https://api.vk.com/method/wall.get?domain=" + domain +
-                    "&access_token=" + token + "&count=20&offset=" + offset + "&v=5.131";
-            res.addAll(Parser.Parse(parseUrl));
-            offset += 20;
+                    "&access_token=" + token + "&count=100&offset=" + offset + "&v=5.131";
+            res.addAll(Objects.requireNonNull(Parser.Parse(parseUrl)));
+            offset += 100;
         }
         System.out.println("Профиль: https://vk.com/" + domain + "\nПостов за последнюю неделю: " + res.size() + "\nСсылки на посты за последнюю неделю:");
         for (Post post : res){
             System.out.println(post.getLink());
+            System.out.println(post.getText());
         }
         return res;
     }
