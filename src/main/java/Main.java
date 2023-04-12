@@ -2,6 +2,6 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        System.out.println(Mishaniy.Main.MainM("vk.com/webm"));
+        Mishaniy.Main.MainM("vk.com/webm");
     }
 }

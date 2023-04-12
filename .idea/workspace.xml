@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5080200b-0fff-456d-9f4e-966b61e42d1e" name="Changes" comment="v1">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mishaniy/entity/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Mishaniy/MainTest.java" afterDir="false" />
+    <list default="true" id="5080200b-0fff-456d-9f4e-966b61e42d1e" name="Changes" comment="release 1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mishaniy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mishaniy/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mishaniy/entity/ItemsO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mishaniy/entity/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mishaniy/entity/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mishaniy/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mishaniy/parser/Parser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +58,7 @@
       <recent name="Mishaniy" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MainTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ex2" />
@@ -136,11 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.MainTest" />
         <item itemvalue="JUnit.MainTest.invalidUserTest" />
         <item itemvalue="JUnit.MainTest.zeroPostsTest" />
         <item itemvalue="JUnit.MainTest.outputTypeTest" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +148,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681197191689</updated>
       <workItem from="1681197192777" duration="12516000" />
-      <workItem from="1681310067437" duration="6271000" />
+      <workItem from="1681310067437" duration="7556000" />
     </task>
     <task id="LOCAL-00001" summary="v1">
       <created>1681199454776</created>
@@ -169,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681278356724</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="release 1.0">
+      <created>1681322205241</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681322205241</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +179,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="v1" />
+    <MESSAGE value="release 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="release 1.0" />
   </component>
 </project>

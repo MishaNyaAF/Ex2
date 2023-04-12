@@ -37,7 +37,10 @@ public class Main {
             res.addAll(Parser.Parse(parseUrl));
             offset += 20;
         }
-        System.out.println("Профиль: https://vk.com/" + domain + "\nПостов за последнюю неделю: " + res.size());
+        System.out.println("Профиль: https://vk.com/" + domain + "\nПостов за последнюю неделю: " + res.size() + "\nСсылки на посты за последнюю неделю:");
+        for (Post post : res){
+            System.out.println(post.getLink());
+        }
         return res;
     }
 }
