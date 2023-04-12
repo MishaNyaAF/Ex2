@@ -1,23 +1,29 @@
 package Mishaniy.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Response {
 
-    private List<Items> items;
+    private ArrayList<Items> items;
+    private int count;
 
     public Response() {
     }
 
-    public Response(List<Items> items) {
+    public Response(ArrayList<Items> items) {
         this.items = items;
     }
 
-    public List<Items> getItems() {
+    public int getCount() {
+        return count;
+    }
+
+    public ArrayList<Items> getItems() {
         return items;
     }
 
-    public void setItems(List<Items> items) {
+    public void setItems(ArrayList<Items> items) {
         this.items = items;
     }
 

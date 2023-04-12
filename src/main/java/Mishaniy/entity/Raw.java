@@ -2,6 +2,7 @@ package Mishaniy.entity;
 
 public class Raw {
     private Response response;
+    private ErrorU errorU;
 
     public Raw() {
     }
@@ -16,6 +17,14 @@ public class Raw {
 
     public void setResponse(Response response) {
         this.response = response;
+    }
+
+    public ErrorU getErrorU() {
+        return errorU;
+    }
+
+    public void setErrorU(ErrorU errorU) {
+        this.errorU = errorU;
     }
 
     @Override
